@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team11</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    c
+    <style>
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+  --third-color: #ccdbee;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
+  --third-color: #1c1d25;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+	.navbar {
+    background-color: #0072C6; 
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; 
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 28px; 
+}
+
+.navbar p {
+    margin: 0;
+    font-size: 16px; 
+}
+
+/* Styles for the Logout button */
+.logout-button {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+}
+
+#logout-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#logout-icon {
+    font-size: 20px; 
+    color: #fff;
+}
+
+/* Homepage Functionality Styles */
+.background-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.content {
+    color: #fff;
+}
+
+.functionality {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.functionality h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.functionality p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.functionality a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.functionality a:hover {
+    background: #555;
+}
+
+.functionality{
+	background: var(--third-color) !important;
+}
+
+.profile-link{
+cursor: pointer;
+}
+
+.profile-pic1{
+width: 30px;
+border-radius: 50%;
+}
+
+.profile
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-color);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.profile-info
+{
+  text-align: center;
+  margin-bottom: 350px;
+  position: absolute;
+}
+
+.profile-info h1
+{
+  font-size: 30px;
+  margin: 0px;
+}
+
+.profile-pic1
+{
+  flex: 2;
+  padding: 30px;
+}
+
+.profile-pic1 img
+{
+  max-width: 100%;
+  height: auto; 
+  border-radius: 50%;
+}
+
+.profile-details
+{
+  flex: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.name-box, .details-box
+{
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.name-box h2, .details-box h2
+{
+  margin: 0;
+  font-weight: bold;
+}
+
+.name-box p, .details-box p
+{
+  margin: 0;
+  font-size: 16px;
+}
+
+.edit-button
+{
+  margin: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-35%, -50%);
+ 
+}
+
+.edit-button button
+{
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 30px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+.profile-link{
+cursor: pointer;
+}
+
+.profile-pic{
+height: 38px;
+width: 38px;
+border-radius: 50%;
+}
+    </style>
+  </head>
+  <body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <div class="home">
+      <nav>
+        <img class="logo" src="../Images/logo.jpg" />
+        <ul>
+          <li><a href="../main/Home Page.html">Home</a></li>
+	  <a class="profile-link" href="../main/profile.html" ><img class="profile-pic mr-3" src="D:\Users\2565441\Downloads\Prac (2)\Prac\Images\profile.jpg"></a>
+
+        </ul>
+        <img src="../Images/moon.png" id="icon" />
+      </nav>
+
+<div class="profile">
+<div class="profile-info">
+<h1 class="text-content">My Profile</h1>
+</div>
+<div class="profile-pic1">
+<img src="profile.jpg" alt="Profile Picture">
+<h1 class="text-content">Varshini</h1>
+<h2 class="text-content">Amara</h2>
+</div>
+
+<div class="profile-details">
+<div class="name-box">
+<h2 class="text-content">First Name</h2>
+<p class="text-content">Varshini</p>
+</div>
+<div class="details-box">
+<h2 class="text-content">Email</h2>
+<p class="text-content">varshuamara@gmail.com</p>
+</div>
+<div class="details-box">
+<h2 class="text-content">Street No.</h2>
+<p class="text-content">123 Alpha Street</p>
+</div>
+
+</div>
+
+<div class="profile-details">
+<div class="name-box">
+<h2 class="text-content">Last Name</h2>
+<p class="text-content">Amara</p>
+</div>
+<div class="details-box">
+<h2 class="text-content">Phone</h2>
+<p class="text-content">1234567818</p>
+</div>
+<div class="details-box">
+<h2 class="text-content">City</h2>
+<p class="text-content">OH</p>
+</div>
+</div>
+
+<div class="edit-button pt-3 pl-5">
+<a href="../main/edit_profile.html" class="btn btn-primary">Edit</a>
+</div>
+</div>
+
+      <footer class="footer text-center pb-2">
+        <div class="col-md-12">
+          <img class="logo" src="../Images/logo.jpg" alt="Footer Logo" />
+        </div>
+        <div class="col-md-12">
+          <ul class="footer-links d-flex justify-content-center">
+            <li class="col-3"><a href="../main/About page/About.html">About Us</a></li>
+            <li class="col-3"><a href="../main/ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </footer>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

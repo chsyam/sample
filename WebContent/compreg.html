@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="ISO-8859-1">
+    <title>Complaint Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script>
+	function home()
+	{
+		window.open("Complaint_registration.html","_self");
+	}
+	function success()
+	{
+		window.open("reg_success.html","_self");
+	}
+	function remove()
+	{
+		document.location.reload(true);
+	}
+    </script>
+  </head>
+  <body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <div class="home">
+      <nav>
+        <img class="logo" src="../Images/logo.jpg" />
+        <ul>
+          <li><a href="../main/Home Page.html">Home</a></li>
+          <li><a href="../main/register.html">Register</a></li>
+          <li><a href="../main/login.html">Login</a></li>
+        </ul>
+        <img src="../Images/moon.png" id="icon" />
+      </nav>
+      <section class="vh-100">
+        <div class="container py-3 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div
+                class="card shadow-2-strong card-registration"
+                style="border-radius: 15px"
+              >
+                <div class="card-body p-4 p-md-5">
+                  <h3
+                    class="mb-4 pb-2 pb-md-0 mb-md-5"
+                    style="color: var(--secondary-color)"
+                  >
+                    Complaint Registration 
+                  </h3>
+                  <form method="post" action="ComplaintRegistrationSer" >
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <select name="categ_select" style="height:40px;border-radius:4px;width:530px;border:0px">
+						<optgroup label="Billing Related Issue" >
+							<option value="bill_status">bill payment status not updated</option>
+							<option value="incorrect_billamount">Incorrect bill amount</option>
+							<option value="other_bill_issue">Others</option>
+						</optgroup>
+						<optgroup label="Voltage Related Issue" >
+							<option value="fluctuation">Fluctuation in voltage</option>
+							<option value="low_voltage">Low Voltage</option>
+							<option value="high_voltage">High Voltage</option>
+						</optgroup>
+						<optgroup label="Frequent Disruption Issue" >
+							<option value="powercut">Frequent power cut</option>
+							<option value="other_disruption">Others</option>
+						</optgroup>
+		                                <optgroup label="Street Light Related Issue" >
+							<option value="dimlight">Street Lights are dim</option>
+							<option value="timings">Street Lights are not being lit on time</option>
+							<option value="notworking">Street Lights are not working</option>
+						</optgroup>
+						<optgroup label="Pole Related Issue" >
+							<option value="sparkel">Sparkles are being viewed on pole</option>
+							<option value="polefailure">Power cuts are frequent due to pole issue</option>
+							<option value="other_pole">Others</option>
+						</optgroup>
+					</select>
+                          <label class="form-label" for="complaintType"
+                            >Complaint Type</label
+                          >
+                        </div>
+                      </div>
+		      </div>
+		      <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input
+                            type="text"
+                            id="contactName"
+                            class="form-control form-control-lg"
+			    required="" placeholder="Enter your name"
+			    name="contact_name"
+                          />
+                          <label class="form-label" for="contactName" 
+                            >Contact Name</label
+                          >
+                        </div>
+                      </div>
+		      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input
+                            type="text"
+                            id="consumerNumber"
+                            class="form-control form-control-lg"
+			    required="" placeholder="Enter your customer id"
+			    name="customer_id"	
+                          />
+                          <label class="form-label" for="consumerNumber"
+                            >Consumer Id</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <div class="form-outline">
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="landmark"
+			    required="" placeholder="Enter landmark"
+			    name="landmark"
+                          />
+                          <label for="landmark" class="form-label"
+                            >Landmark</label
+                          >
+                        </div>
+                      </div>
+                     <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <div class="form-outline">
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="mobileNumber"
+			    required="" placeholder="Enter your mobile number"
+			    name="mobile_number"
+                          />
+                          <label for="mobileNumber" class="form-label"
+                            >Mobile Number</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="row">
+                      <div class="col-md-12 mb-4 pb-2">
+                        <div class="form-outline">
+			  <div>
+                          <textarea rows="3" cols="65" style="border:0px;border-radius:4px" name="prob_desc" required="" placeholder="Enter problem description"></textarea></div>
+                          <label class="form-label" for="probdesc"
+                            >Problem Description</label
+                          >
+                        </div>
+			</div>
+                      </div>
+		    <div class="row">
+                      <div class="col-md-12 mb-4 pb-2">
+                        <div class="form-outline">
+                          <div>
+                          <textarea rows="3" cols="65" style="border:0px;border-radius:4px" name="address" required="" placeholder="Enter Address"></textarea>
+			  </div>
+                          <label class="form-label" for="address"
+                            >Address</label
+                          >
+                        </div>
+                      </div>
+		    </div>
+                    <div class="row">
+                    <div class="col-md-3 mt-4 pt-2">
+                      <button type="submit" class="btn btn-primary" >Submit</button> 
+                    </div>
+		    <div class="col-md-3 mt-4 pt-2">
+                      <button type="button" class="btn btn-primary" onclick="remove()">Reset</button> 
+                    </div>
+		    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer text-center pb-2">
+        <div class="col-md-12">
+          <img class="logo" src="../Images/logo.jpg" alt="Footer Logo" />
+        </div>
+        <div class="col-md-12">
+          <ul class="footer-links d-flex justify-content-center">
+            <li class="col-3"><a href="about.html">About Us</a></li>
+            <li class="col-3"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+	
+				
